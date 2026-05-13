@@ -2,17 +2,28 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, copy `.env.example` to `.env.local` and set your MongoDB connection string:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env.local
 ```
+
+Then install dependencies and run the development server:
+
+```bash
+npm install
+npm run dev
+```
+
+The app includes these routes:
+- `/` — Landing page
+- `/login` — Login page
+- `/signup` — Signup page
+- `/dashboard` — Dashboard overview
+- `/create-ticket` — Ticket submission form
+
+API route:
+- `/api/tickets` — GET and POST ticket storage using MongoDB
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
